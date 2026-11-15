@@ -2,7 +2,7 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "pulsar-workflows",
   "displayName": "Pulsar Workflows",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Build, run, test and improve Pulsar Workflows from Claude: list and edit workflows, run them in Pulsar's sandbox, keep test cases, and learn from the full traces of past runs.",
   "author": {
     "name": "Starlight Search",

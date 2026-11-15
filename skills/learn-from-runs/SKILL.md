@@ -9,7 +9,7 @@ Every Pulsar run keeps a full trace: the input, the instructions the agent was g
 
 ## Find the runs worth reading
 
-- `list_runs` for the workflow. Filter by `status` (for example `failed`), by `since` (an ISO date), or by `version` to compare before and after an edit. Each run records the workflow version it ran.
+- `list_runs` for the workflow. Filter by `status` (for example `failed`), by `since` (an ISO date), or by `version` to compare before and after an edit. Each run records the workflow version it ran; `get_workflow` gives the current one.
 - Start with failed runs and runs whose answers the person says were wrong. Then look at slow or expensive successes.
 
 ## Find the moment it went wrong

@@ -10,7 +10,7 @@ A Pulsar workflow is a task someone repeats, written down so an agent can do it 
 ## Before you write anything
 
 1. Call `get_authoring_guide` once per conversation and follow it. It is the source of truth for SKILL.md's frontmatter, the sandbox layout (`/workspace/workflow`, `/workspace/inputs`, `/workspace/knowledge`, `/workspace/out`) and the models on offer. Do not guess these.
-2. Call `list_projects` and confirm with the person which project the workflow belongs to when there is more than one. Never pick one silently.
+2. Call `list_projects` (every tool's `project_id` comes from it) and confirm with the person which project the workflow belongs to when there is more than one. Never pick one silently.
 3. Call `list_workflows` for that project. If a workflow already does most of the job, improve it instead of creating a near-duplicate.
 4. Ask only what you cannot reasonably default: what the workflow is given, what it must hand back, and which apps or systems it touches. One question at a time.
 
