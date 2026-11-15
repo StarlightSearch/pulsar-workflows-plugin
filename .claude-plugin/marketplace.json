@@ -1,0 +1,14 @@
+{
+  "name": "starlightsearch",
+  "description": "Starlight Search plugins for Claude: Pulsar Workflows.",
+  "owner": {
+    "name": "Starlight Search",
+    "url": "https://starlight-search.com"
+  },
+  "plugins": [
+    {
+      "name": "pulsar-workflows",
+      "source": "./"
+    }
+  ]
+}
