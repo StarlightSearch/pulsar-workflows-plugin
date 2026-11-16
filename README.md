@@ -5,10 +5,11 @@ Build, run, test and improve [Pulsar Workflows](https://workflows.pulsarbot.clou
 ## What you get
 
 - **The Pulsar Workflows MCP server** (`https://workflows.pulsarbot.cloud/mcp`), with tools for projects, workflows, files, runs, test cases, run traces, the knowledge base and app connections.
-- **Three skills** that teach Claude how to use them well:
+- **Four skills** that teach Claude how to use them well:
   - `build-workflow`: pick the project, write SKILL.md, declare secrets and connected apps, get a first run working.
   - `test-and-improve`: run, read every result, fix the instructions, keep test cases.
   - `learn-from-runs`: find failed or slow tool calls, read a call or a subagent's answer whole, read full traces and the instructions a run had, and turn run history into concrete improvements.
+  - `call-workflows-api`: call a workflow from your own code, with the TypeScript SDK ([`@starlightsearch/workflows`](https://www.npmjs.com/package/@starlightsearch/workflows)) or the HTTP API with curl: keys and slugs, waiting, structured output, files, idempotent retries and errors.
 
 ## Install
 

@@ -2,8 +2,8 @@
   "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
   "name": "pulsar-workflows",
   "displayName": "Pulsar Workflows",
-  "version": "0.1.2",
-  "description": "Build, run, test and improve Pulsar Workflows from Claude: list and edit workflows, run them in Pulsar's sandbox, keep test cases, and learn from the full traces of past runs.",
+  "version": "0.1.3",
+  "description": "Build, run, test and improve Pulsar Workflows from Claude: list and edit workflows, run them in Pulsar's sandbox, keep test cases, learn from the full traces of past runs, and call workflows from your own code.",
   "author": {
     "name": "Starlight Search",
     "url": "https://starlight-search.com"
@@ -11,7 +11,7 @@
   "homepage": "https://workflows.pulsarbot.cloud/docs/agents",
   "repository": "https://github.com/StarlightSearch/pulsar-workflows-plugin",
   "license": "MIT",
-  "keywords": ["workflows", "agents", "automation", "skills", "pulsar"],
+  "keywords": ["workflows", "agents", "automation", "skills", "pulsar", "sdk", "api"],
   "icon": "./assets/icon.png",
   "documentationUrl": "https://workflows.pulsarbot.cloud/docs/agents",
   "supportUrl": "https://github.com/StarlightSearch/pulsar-workflows-plugin/issues",
