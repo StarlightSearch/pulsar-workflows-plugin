@@ -8,7 +8,7 @@ Build, run, test and improve [Pulsar Workflows](https://workflows.pulsarbot.clou
 - **Three skills** that teach Claude how to use them well:
   - `build-workflow`: pick the project, write SKILL.md, declare secrets and connected apps, get a first run working.
   - `test-and-improve`: run, read every result, fix the instructions, keep test cases.
-  - `learn-from-runs`: find failed or slow tool calls and read full traces to turn run history into concrete improvements.
+  - `learn-from-runs`: find failed or slow tool calls, read a call or a subagent's answer whole, read full traces and the instructions a run had, and turn run history into concrete improvements.
 
 ## Install
 
