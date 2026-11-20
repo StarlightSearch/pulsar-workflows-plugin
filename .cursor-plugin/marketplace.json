@@ -1,0 +1,19 @@
+{
+  "name": "starlight-search",
+  "owner": {
+    "name": "Starlight Search",
+    "email": "support@starlight-search.com"
+  },
+  "metadata": {
+    "description": "Starlight Search plugins for Cursor: Pulsar Workflows."
+  },
+  "plugins": [
+    {
+      "name": "pulsar-workflows",
+      "source": "./",
+      "description": "Build, run, test and improve Pulsar Workflows from Cursor: list and edit workflows, run them in Pulsar's sandbox, keep test cases, learn from the full traces of past runs, and call workflows from your own code.",
+      "logo": "assets/icon.png",
+      "category": "Productivity"
+    }
+  ]
+}

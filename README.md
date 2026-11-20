@@ -20,7 +20,7 @@ Build, run, test and improve [Pulsar Workflows](https://workflows.pulsarbot.clou
 /plugin install pulsar-workflows@starlightsearch
 ```
 
-**Cursor**: install **Pulsar Workflows** from the [Cursor Marketplace](https://cursor.com/marketplace), or from Customize → Plugins in Cursor.
+**Cursor**: open Customize → Plugins → Add → From GitHub Repository, paste `https://github.com/StarlightSearch/pulsar-workflows-plugin` and import. Then choose Add next to pulsar-workflows under Starlight Search.
 
 **Codex**
 
@@ -41,7 +41,7 @@ One repository serves three agents. Keep the copies in step when you change the 
 | File | Read by |
 | --- | --- |
 | `.claude-plugin/plugin.json`, `.claude-plugin/marketplace.json`, `.mcp.json` | Claude Code |
-| `.cursor-plugin/plugin.json` (server inline) | Cursor |
+| `.cursor-plugin/plugin.json` (server inline), `.cursor-plugin/marketplace.json` | Cursor |
 | `plugin.json`, `mcp.json` ([Agent Plugins](https://agent-plugins.org) standard), `.agents/plugins/marketplace.json` | Codex, and any agent that reads Agent Plugins |
 | `skills/` | all of them |
 
