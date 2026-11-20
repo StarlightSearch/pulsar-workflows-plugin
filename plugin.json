@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "pulsar-workflows",
-  "version": "0.2.0",
-  "description": "Build, run, test and improve Pulsar Workflows from your coding agent: list and edit workflows, run them in Pulsar's sandbox, keep test cases, learn from the full traces of past runs, and call workflows from your own code.",
+  "version": "0.2.1",
+  "description": "Build, run, test and improve Pulsar Workflows from your coding agent: list and edit workflows, run them in Pulsar's sandbox, keep test cases, learn from the full traces of past runs, call workflows from your own code, and put them in your app's UI.",
   "author": {
     "name": "Starlight Search",
     "url": "https://starlight-search.com"
@@ -16,7 +16,7 @@
       "interface": {
         "displayName": "Pulsar Workflows",
         "shortDescription": "Build, run, test and improve Pulsar workflows",
-        "longDescription": "Write a workflow's SKILL.md and scripts, run it in Pulsar's sandbox, keep test cases, read the full traces of past runs to see why a run went wrong, and call workflows from your own code.",
+        "longDescription": "Write a workflow's SKILL.md and scripts, run it in Pulsar's sandbox, keep test cases, read the full traces of past runs to see why a run went wrong, call workflows from your own code, and put them in your app's UI.",
         "developerName": "Starlight Search",
         "category": "Productivity",
         "capabilities": ["Read", "Write"],

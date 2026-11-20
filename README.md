@@ -5,11 +5,12 @@ Build, run, test and improve [Pulsar Workflows](https://workflows.pulsarbot.clou
 ## What you get
 
 - **The Pulsar Workflows MCP server** (`https://workflows.pulsarbot.cloud/mcp`), with tools for projects, workflows, files, runs, test cases, run traces, the knowledge base and app connections.
-- **Four skills** that teach your agent how to use them well:
+- **Five skills** that teach your agent how to use them well:
   - `build-workflow`: pick the project, write SKILL.md, declare secrets and connected apps, get a first run working.
   - `test-and-improve`: run, read every result, fix the instructions, keep test cases.
   - `learn-from-runs`: find failed or slow tool calls, read a call or a subagent's answer whole, read full traces and the instructions a run had, and turn run history into concrete improvements.
   - `call-workflows-api`: call a workflow from your own code, with the TypeScript SDK ([`@starlightsearch/workflows`](https://www.npmjs.com/package/@starlightsearch/workflows)) or the HTTP API with curl: keys and slugs, waiting, structured output, files, idempotent retries and errors.
+  - `embed-workflows-ui`: let a web app's users run workflows and see progress and results in the app: the server route that keeps the key out of the browser (`@starlightsearch/workflows/server`), per-user scope, following a run, and the React UI kit (`@starlightsearch/workflows-react`).
 
 ## Install
 
@@ -50,7 +51,7 @@ One repository serves three agents. Keep the copies in step when you change the 
 - Everything goes to Pulsar Workflows at `https://workflows.pulsarbot.cloud/mcp`, over HTTPS, signed in as you. Sign-in is handled by WorkOS AuthKit (`real-pleasure-88.authkit.app`); the plugin stores no credentials.
 - The tools send what you ask your agent to do: workflow files you write, run inputs (text and files), test cases, knowledge files you add. They read back workflows, run results, files and traces from the projects you can open in Pulsar, and nothing else.
 - Running a workflow executes it in Pulsar's sandbox and counts toward your organisation's usage. A workflow can act on apps connected to its project (for example Linear or Gmail), exactly as when you run it in the Pulsar web app.
-- The plugin contains no scripts, hooks or executables: only manifests, the MCP server address and three Markdown skills.
+- The plugin contains no scripts, hooks or executables: only manifests, the MCP server address and five Markdown skills.
 
 Privacy policy: https://pulsarbot.cloud/privacy. Terms: https://pulsarbot.cloud/terms.
 
