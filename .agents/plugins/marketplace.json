@@ -1,0 +1,20 @@
+{
+  "name": "starlightsearch",
+  "interface": {
+    "displayName": "Starlight Search"
+  },
+  "plugins": [
+    {
+      "name": "pulsar-workflows",
+      "source": {
+        "source": "local",
+        "path": "./"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
