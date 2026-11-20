@@ -1,5 +1,7 @@
 {
   "name": "pulsar-workflows",
+  "displayName": "Pulsar Workflows",
+  "publisher": "Starlight Search",
   "version": "0.2.0",
   "description": "Build, run, test and improve Pulsar Workflows from Cursor: list and edit workflows, run them in Pulsar's sandbox, keep test cases, learn from the full traces of past runs, and call workflows from your own code.",
   "author": {
@@ -8,12 +10,22 @@
   "homepage": "https://workflows.pulsarbot.cloud/docs/agents",
   "repository": "https://github.com/StarlightSearch/pulsar-workflows-plugin",
   "license": "MIT",
-  "keywords": ["workflows", "agents", "automation", "skills", "pulsar", "sdk", "api", "mcp"],
+  "keywords": [
+    "workflows",
+    "agents",
+    "automation",
+    "skills",
+    "pulsar",
+    "sdk",
+    "api",
+    "mcp"
+  ],
   "logo": "assets/icon.png",
   "skills": "./skills/",
   "mcpServers": {
     "pulsar-workflows": {
       "url": "https://workflows.pulsarbot.cloud/mcp"
     }
-  }
+  },
+  "category": "integrations"
 }
