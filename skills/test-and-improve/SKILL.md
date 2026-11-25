@@ -10,7 +10,7 @@ A workflow is only as good as its last real run. Your loop: run, read everything
 ## Run it
 
 1. `start_run` with the workflow id and a realistic input: `text`, `files` (base64), or both. Pass `output_schema` only to try a schema the workflow does not declare.
-2. If `start_run` came back as a background task, wait for its result (the status names the run id, which works with `cancel_run`, `get_trace` and `list_tool_calls` meanwhile). Otherwise `wait_for_run` until the run ends. Each call waits at most 50 seconds; when it answers `still_running`, call it again. Do not start another run meanwhile.
+2. When a run starts, give the person its `dashboard_url` so they can watch it in Pulsar. If `start_run` came back as a background task (the link is also at the end of its status), wait for its result (the status names the run id, which works with `cancel_run`, `get_trace` and `list_tool_calls` meanwhile). Otherwise `wait_for_run` until the run ends. Each call waits at most 50 seconds; when it answers `still_running`, call it again. Do not start another run meanwhile.
 3. Every run costs money and takes up to a few minutes. Never repeat an input without a change in between, and tell the person before running many cases.
 
 ## Read everything
@@ -38,4 +38,4 @@ Look at all of it, not just the status:
 
 ## Report
 
-Tell the person, briefly: what you changed, which inputs you ran, what passed and what still fails, and what you would try next. Link to the workflow in Pulsar when useful (`https://workflows.pulsarbot.cloud`).
+Tell the person, briefly: what you changed, which inputs you ran, what passed and what still fails, and what you would try next. Link each run you discuss with its `dashboard_url`, and the whole set with `run_test_cases`'s `dashboard_url` (the workflow's Runs tab). Use the links exactly as the tools give them; never build one.

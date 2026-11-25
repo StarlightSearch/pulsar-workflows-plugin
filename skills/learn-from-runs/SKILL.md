@@ -38,6 +38,8 @@ When reviewing several runs, keep a short table for yourself: run, version, outc
 
 ## Turn it into changes
 
+When you point at a run, link it with its `dashboard_url` (from `get_run` or `list_runs`) so the person can open it in Pulsar.
+
 Propose the smallest change to `SKILL.md` or a script that addresses the cause, make it (read first, pass `expected_sha256`), and prove it with the `test-and-improve` loop: rerun the failing input, then the test cases. Save the failing input as a test case so it cannot regress silently.
 
 Traces can contain customer data from real runs. Quote only what you need, and never copy a trace's contents anywhere outside Pulsar without the person asking.
