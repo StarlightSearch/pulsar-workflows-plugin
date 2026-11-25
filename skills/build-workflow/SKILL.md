@@ -30,7 +30,7 @@ A Pulsar workflow is a task someone repeats, written down so an agent can do it 
 
 ## First run
 
-Draft, then prove it: run it once on a realistic input with `start_run` and `wait_for_run`. If the person has no example, make a small realistic one and say so. Then hand over to the `test-and-improve` skill.
+Draft, then prove it: run it once on a realistic input with `start_run`. If it came back as a background task, wait for its result (the status names the run id, which works with `cancel_run`, `get_trace` and `list_tool_calls` meanwhile); otherwise use `wait_for_run`. If the person has no example, make a small realistic one and say so. Then hand over to the `test-and-improve` skill.
 
 ## What not to do
 

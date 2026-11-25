@@ -10,7 +10,7 @@ A workflow is only as good as its last real run. Your loop: run, read everything
 ## Run it
 
 1. `start_run` with the workflow id and a realistic input: `text`, `files` (base64), or both. Pass `output_schema` only to try a schema the workflow does not declare.
-2. `wait_for_run` until the run ends. Each call waits at most 50 seconds; when it answers `still_running`, call it again. Do not start another run meanwhile.
+2. If `start_run` came back as a background task, wait for its result (the status names the run id, which works with `cancel_run`, `get_trace` and `list_tool_calls` meanwhile). Otherwise `wait_for_run` until the run ends. Each call waits at most 50 seconds; when it answers `still_running`, call it again. Do not start another run meanwhile.
 3. Every run costs money and takes up to a few minutes. Never repeat an input without a change in between, and tell the person before running many cases.
 
 ## Read everything
@@ -32,7 +32,7 @@ Look at all of it, not just the status:
 ## Test cases
 
 - `save_test_case` from a run whose input represents a real situation: the typical case, an edge case, a case that once failed. Name it after the situation.
-- `list_test_cases` shows each case and how its last run went; `run_test_cases` reruns all of them (or the ids you pass) and returns run ids to `wait_for_run`.
+- `list_test_cases` shows each case and how its last run went; `run_test_cases` reruns all of them (or the ids you pass) and returns run ids to `wait_for_run`. If it came back as a background task, wait for its result instead (the status names the run ids, and the result lists each case's run and status); `start_prepared_run` works the same way.
 - Rerun the whole set after any meaningful change, and report pass and fail per case to the person.
 - Only run an evaluation of many cases when the person asks; it costs one run per case.
 
