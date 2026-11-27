@@ -33,6 +33,21 @@ Then run `codex`, open `/plugins`, choose the Starlight Search marketplace and i
 
 Each of these installs the MCP server and the skills together. The first time your agent uses a Pulsar tool, your browser opens to sign in to Pulsar Workflows with your usual account and allow access. You need a Pulsar Workflows account: sign up at https://workflows.pulsarbot.cloud.
 
+### On a server or over SSH
+
+Signing in sends your browser back to `localhost` on the machine running the agent. If the agent runs on a Raspberry Pi, a server or in a session over SSH, your laptop's browser cannot reach that address, so the page after sign-in says it cannot connect. Two ways round it:
+
+- **Use a project API key** (no browser at all). In Pulsar Workflows, open your project's **Agents** page and choose **Create a key for a server**. It shows this command with the key filled in; run it on the machine where the agent runs:
+
+  ```
+  claude mcp add --transport http pulsar-workflows https://workflows.pulsarbot.cloud/mcp --header "Authorization: Bearer pk_live_..."
+  ```
+
+  The key acts as that one project: it cannot delete workflows or connect apps, and you can revoke it on the project's API keys page.
+- **Sign in anyway**: finish signing in in your laptop's browser, then copy the whole address from its address bar (it starts `http://localhost:` and carries `code=`) and paste it where the agent asks for it. The code works once and only for a few minutes. Or connect with `ssh -L <port>:localhost:<port>`, using the port in the sign-in link, and the sign-in completes by itself.
+
+More: https://workflows.pulsarbot.cloud/docs/agents#server.
+
 Using another agent? The same server works anywhere that supports remote MCP servers with OAuth; see https://workflows.pulsarbot.cloud/docs/agents.
 
 ## Layout
